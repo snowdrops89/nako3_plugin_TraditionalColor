@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<title>いろみほん</title>
+
+</head>
+
+<body>
+<!-- なでしこを使うために必要なスクリプト -->
+<script type="text/javascript" src="https://nadesi.com/v3/cdn.php?v=3.1.0&f=release/wnako3.js&run"></script>
+<!-- type="なでしこ" のスクリプトが実行される -->
+<script type="なでしこ">
+「body」の「背景色」に白色をDOMスタイル設定。
+
+色データURL＝「TraditionalColor.csv」
+#---色データダウンロード----------
+色データURLへGET送信した時には
+　　対象をCSV取得し、それを色データへ代入。
+　　色見本＝「<ul>」
+　　色データを反復
+　　　　色名＝対象[0]。色仮名＝対象[2]。カラーコード＝対象[1]。
+　　　　RGB色＝カラーコードをRGB分解。
+　　　　HSL色＝カラーコードをHSL変換。
+　　　　HSLコード＝HSL色でHSLコード作成。
+　　　　輝度＝HSL色[2]。
+　　　　もし、輝度＜50ならば、HSL色[2]＝90。
+　　　　違えば、HSL色[2]＝10。
+　　　　文字色＝HSL色でHSLコード作成。
+　　　　色見本＝「<li style="background-color:{カラーコード}; color:{文字色};">{色名}（{色仮名}）　{カラーコード}　RGB({RGB色})　{HSLコード}</li>」を色見本に一行追加。
+　　ここまで。
+　　色見本＝色見本&「</ul>」
+　　「#iro-mihon」に色見本をHTML設定。
+
+　　「ul」に{
+      "list-style-type": "none",
+      "余白": "0px",
+      "マージン": "20px",
+  }をDOMスタイル一括設定。
+　　「li」に{    "padding": "10px",
+      "マージン": "5px",
+      "font-weight": "bold"
+      "font-family": "serif"
+  }をDOMスタイル一括設定。
+ここまで。
+#-----------------------------------------------------------------------
+# RGB(#RRGGBB)→HSL(H,S,L)
+# H=0～359。S,L＝0～100。
+●(色を|色の)HSL変換
+　　Hとは変数。Sとは変数。Lとは変数。Maxとは変数。Minとは変数。Rとは変数。Gとは変数。Bとは変数。
+　　色＝色のRGB分解。R=色[0]。G=色[1]。B=色[2]。
+　　Max＝色の配列最大値。Min＝色の配列最小値。
+　　もし、(R=G)かつ(G=B)ならば、H=0。
+　　違えば、もし、Max＝Rならば、H=60*((G-B)/(Max-Min))。
+　　違えば、もし、Max＝Gならば、H=60*((B-R)/(Max-Min))+120。
+　　違えば、もし、Max＝Bならば、H=60*((R-G)/(Max-Min))+240。
+　　もし、H＜0ならば、H=H+360。
+　　H=Hを四捨五入。
+　　L=(Max+Min)/2。
+　　もし、(Max=Min)ならば、S=0。
+　　違えば、もし、L＜128ならば、S=(Max-Min)/(Max+Min)
+　　違えば、S=(Max-Min)/(510-Max-Min)
+　　S=S*100を1で小数点四捨五入。
+　　L=L/255*100を1で小数点四捨五入。
+　　[H,S,L]で戻る。
+ここまで。
+
+●(HSLで)HSLコード作成
+　　Hとは変数。Sとは変数。Lとは変数。
+　　H=HSL[0]。S=HSL[1]。L=HSL[2]。
+　　「HSL({H},{S}%,{L}%)」で戻る。
+ここまで。
+
+#HTMLの16進カラーコード(#RRGGBB)を256色表示(R,G,B)に分解。
+●(色を|色の)RGB分解
+　分色とは変数。分色＝空配列。
+　色＝色の「#」を空に置換。
+　色＝「0x」&色を整数変換。
+　数を２から０まで繰り返す
+　　分色[数]＝色%256。
+　　色＝(色-分色[数])/256
+　ここまで。
+　分色で戻る。
+ここまで。
+#-----------------------------------------------------------------------
+</script>
+<div id="iro-mihon"></div>
+</body>
+</html>
