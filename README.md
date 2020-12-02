@@ -5,14 +5,16 @@
  
 　命令ではなく、標準の色定数に加えて、日本の伝統色４８０色（＋透明）が日本語で色指定出来るってだけの、定数群です。
 
-　直で引っ張るなら、ここ。(https://snowdrops89.github.io/nako3_plugin_TraditionalColor/Plugin_TraditionalColor.js)
+　直で引っ張るなら、ここ。
+
+> https://snowdrops89.github.io/nako3_plugin_TraditionalColor/Plugin_TraditionalColor.js
  
 - **日本の伝統色.nako**
 
 　ついでで、ｖ１用のも置いておく。
 
 # 色見本
-　https://snowdrops89.github.io/nako3_plugin_TraditionalColor/iro-mihon.html
+> https://snowdrops89.github.io/nako3_plugin_TraditionalColor/iro-mihon.html
  
 ## おことわり
 　色名とカラーコードについては、複数の書籍やサイトを参考にしています。
