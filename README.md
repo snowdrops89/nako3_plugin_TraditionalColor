@@ -13,6 +13,13 @@
 
 　ついでで、ｖ１用のも置いておく。
 
+　なでしこのインストールフォルダ内のlibフォルダに放り込むか、プログラムと同じ所に置いて、取り込む。
+
+```
+！『日本の伝統色.nako』を取り込む。
+母艦を撫子色で画面クリア。
+```
+
 # 色見本
 > https://snowdrops89.github.io/nako3_plugin_TraditionalColor/iro-mihon.html
  
