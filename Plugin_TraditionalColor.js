@@ -1,7 +1,7 @@
 ﻿/**
  * なでしこ3 プラグイン
  * TraditionalColor.js
- * 日本の伝統色480色（＋透明）が使える定数群
+ * 日本の伝統色480色が使える定数群
  */
 const TraditionalColor = {
   // @色定数
@@ -485,7 +485,6 @@ const TraditionalColor = {
   '若芽色': {type: 'const', value: '#E0EBAF'}, // @わかめいろ
   '山葵色': {type: 'const', value: '#A8BF93'}, // @わさびいろ
   '勿忘草色': {type: 'const', value: '#89C3EB'}, // @わすれなぐさいろ
-  '透明': {type: 'const', value: 'rgba(0,0,0,0)'}, // @とうめい
 }
 // モジュールのエクスポート(必ず必要)
 if (typeof module !== 'undefined' && module.exports) {
