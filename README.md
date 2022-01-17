@@ -19,6 +19,11 @@
 ！『日本の伝統色.nako』を取り込む。
 ```
 
+- **TraditionalColor.csv**
+
+　元データです。色見本に使っています。
+
+　なでしことか関係なくデータだけ利用していただいても構いません。 
 
 # 色見本
 > https://snowdrops89.github.io/nako3_plugin_TraditionalColor/iro-mihon.html
