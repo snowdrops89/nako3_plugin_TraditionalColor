@@ -7,16 +7,33 @@
 
 <body>
 <!-- なでしこ3のエンジンを取り込み -->
-<script type="text/javascript" src="https://nadesi.com/v3/cdn.php?v=3.1.5&f=release/wnako3.js&run"></script>
-<!-- プラグインを取り込み -->
-<script type="text/javascript" src="https://snowdrops89.github.io/nako3_plugin_TraditionalColor/Plugin_TraditionalColor.js"></script>
+<script type="text/javascript" src="https://nadesi.com/v3/cdn.php?v=3.3.52&f=release/wnako3.js&run"></script>
 
 <!-- なでしこのプログラム -->
 <script type="なでしこ">
-
+#-----------------------------------------------------------------------
+//!『Plugin_TraditionalColor.js』を取り込む。
+!『日本の伝統色.nako3』を取り込む。
+#-----------------------------------------------
+「#nako3_div_1」にDOM親要素設定。
+『#nako3_canvas_1』へ描画開始。
+#-----------------------------------------------------------------------
 「body」の「背景色」に撫子色をDOMスタイル設定。
 
-</script>
+「なでしこ」のラベル作成して、テストに代入。
+テストの「文字サイズ」に「36px」をDOMスタイル設定。
+テストの「背景色」に纁をDOMスタイル設定。
+テストの「余白」に「0 10px」をDOMスタイル設定。
 
+藍色に塗り色設定。
+[100,100]に50の円描画。
+萌黄に塗り色設定。
+[50,50]に50の円描画。
+茜色に塗り色設定。
+[120,50]に50の円描画。
+#-----------------------------------------------------------------------
+</script>
+<div id="nako3_div_1" class="nako3_div"></div>
+<canvas id="nako3_canvas_1" width=310 height=150></canvas>
 </body>
 </html>
