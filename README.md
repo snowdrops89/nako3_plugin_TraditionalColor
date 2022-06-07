@@ -1,15 +1,44 @@
 # 日本の伝統色の色定数
-- **Plugin_TraditionalColor.js**
 
-　これは、[日本語プログラミング言語『なでしこv3』](https://nadesi.com/top/)用のプラグインです。
+　これは、[日本語プログラミング言語『なでしこ』](https://nadesi.com/top/)用のプラグインです。
  
 　命令ではなく、標準の色定数に加えて、日本の伝統色４８０色が日本語で色指定出来るってだけの、定数群です。
 
-　直で引っ張るなら、ここ。
+## ファイルについて
+### Plugin_TraditionalColor.js
+　なでしこｖ３用のJSプラグインです。
 
-> https://snowdrops89.github.io/nako3_plugin_TraditionalColor/Plugin_TraditionalColor.js
+　Qiitaの、『日本語プログラミング言語「なでしこ」 Advent Calendar 2020』　3日目の記事で、作りました。
+  
+> 『[なでしこ３のプラグインを作ってみたよ！](https://qiita.com/snowdrops89/items/04a0816d65b925a3a0ed)』
+  
+　Javascriptが分からない中、とりあえず「なでしこ３の」プラグイン作成をお試ししてみたものでした。
+
+　記事ではscriptタグで読み込ませるのに苦労していましたが、v3.3.3からhtml埋め込みでも、「取り込む」文が使えるようになりました！　やったね☆
  
-- **日本の伝統色.nako**
+ ```
+ !『https://snowdrops89.github.io/nako3_plugin_TraditionalColor/Plugin_TraditionalColor.js』を取り込む。
+ ```
+
+　というより、scriptタグで取り込む方式は、今後非推奨になるようです。
+
+　なでしこプラグイン作成の最新の情報はこちら。
+ 
+> 『[なでしこさんマニュアル> 文法/JSプラグインの作り方](https://nadesi.com/v3/doc/index.php?%E6%96%87%E6%B3%95%2FJS%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AE%E4%BD%9C%E3%82%8A%E6%96%B9&show)』
+
+### 日本の伝統色.nako3
+　なでしこｖ３用のNAKO3プラグインです。
+
+　v3.3.3からhtml埋め込みでも、nako3ファイルを取り込んで使えるようになりました！　やったね！！！
+
+```
+!『https://snowdrops89.github.io/nako3_plugin_TraditionalColor/日本の伝統色.nako3』を取り込む。
+```
+
+- [テスト](https://snowdrops89.github.io/nako3_plugin_TraditionalColor/plugin_test.html)
+
+ 
+### 日本の伝統色.nako
 
 　ついでで、ｖ１用のも置いておく。
 
@@ -19,13 +48,13 @@
 ！『日本の伝統色.nako』を取り込む。
 ```
 
-- **TraditionalColor.csv**
+### TraditionalColor.csv
 
 　元データです。色見本に使っています。
 
 　なでしことか関係なくデータだけ利用していただいても構いません。 
 
-# 色見本
+## 色見本
 > https://snowdrops89.github.io/nako3_plugin_TraditionalColor/iro-mihon.html
  
 ## おことわり
@@ -34,3 +63,12 @@
 　それぞれで、同じ色名でもカラーコードが異なる場合や、同じカラーコードに異なる色名が重複している場合もありましたが、このファイルでは色コードの重複することが無いように色々と組み合わせています。
  
 　したがって、知ってる本やサイトの色と合わないよ！　ということもあるかも知れませんが、一応何かしらの根拠はあるということでご了承ください。
+ 
+ ### ※修正
+　まさかの！　同じ定数の重複がありました・・・（漢字が同じで読みが違うやつ）
+
+　しかも３つも！　とりあえず、と言う感じで修正しています・・・
+ 
+- 菖蒲色（あやめいろ）→菖蒲（あやめ）
+- 葡萄色（えびいろ）→葡萄（えびいろ）
+- 褐色（かちいろ）→褐（かちいろ）
