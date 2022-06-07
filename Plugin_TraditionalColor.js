@@ -1,7 +1,7 @@
 ﻿/**
  * なでしこ3 プラグイン
  * TraditionalColor.js
- * 日本の伝統色480色（＋透明）が使える定数群
+ * 日本の伝統色480色が使える定数群
  */
 const TraditionalColor = {
   // @色定数
