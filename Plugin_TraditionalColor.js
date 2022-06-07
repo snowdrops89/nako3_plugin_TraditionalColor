@@ -1,7 +1,7 @@
 ﻿/**
  * なでしこ3 プラグイン
  * TraditionalColor.js
- * 日本の伝統色480色が使える定数群
+ * 日本の伝統色480色（＋透明）が使える定数群
  */
 const TraditionalColor = {
   // @色定数
@@ -50,7 +50,7 @@ const TraditionalColor = {
   '亜麻色': {type: 'const', value: '#D6C6AF'}, // @あまいろ
   '天色': {type: 'const', value: '#2CA9E1'}, // @あまいろ
   '飴色': {type: 'const', value: '#DEB068'}, // @あめいろ
-  '菖蒲色': {type: 'const', value: '#CC7EB1'}, // @あやめいろ
+  '菖蒲': {type: 'const', value: '#CC7EB1'}, // @あやめ
   '洗柿': {type: 'const', value: '#F2C9AC'}, // @あらいがき
   '洗朱': {type: 'const', value: '#D0826C'}, // @あらいしゅ
   '退紅': {type: 'const', value: '#D69090'}, // @あらぞめ
@@ -100,7 +100,7 @@ const TraditionalColor = {
   '江戸茶': {type: 'const', value: '#CD8C5C'}, // @えどちゃ
   '江戸鼠': {type: 'const', value: '#928178'}, // @えどねず
   '江戸紫': {type: 'const', value: '#745399'}, // @えどむらさき
-  '葡萄色': {type: 'const', value: '#640125'}, // @えびいろ
+  '葡萄': {type: 'const', value: '#640125'}, // @えびいろ
   '蒲葡': {type: 'const', value: '#7A4171'}, // @えびぞめ
   '葡萄茶': {type: 'const', value: '#6C2C2F'}, // @えびちゃ
   '海老茶': {type: 'const', value: '#773C30'}, // @えびちゃ
@@ -121,7 +121,7 @@ const TraditionalColor = {
   '柿茶': {type: 'const', value: '#954E2A'}, // @かきちゃ
   '杜若色': {type: 'const', value: '#3E62AD'}, // @かきつばたいろ
   '霞色': {type: 'const', value: '#C8C2C6'}, // @かすみいろ
-  '褐色': {type: 'const', value: '#4D4C61'}, // @かちいろ
+  '褐': {type: 'const', value: '#4D4C61'}, // @かちいろ
   '褐返': {type: 'const', value: '#203744'}, // @かちかえし
   '褐色': {type: 'const', value: '#8A3B00'}, // @かっしょく
   '金糸雀色': {type: 'const', value: '#EBD842'}, // @かなりあいろ
